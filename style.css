@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+h1 {
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.date-selector {
+    padding: 30px;
+    text-align: center;
+    background: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.date-selector label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #495057;
+}
+
+#mealDate {
+    padding: 12px 15px;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-right: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#mealDate:focus {
+    border-color: #4ECDC4;
+}
+
+#searchBtn {
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#searchBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.meal-info {
+    padding: 30px;
+}
+
+#mealDate-display {
+    color: #495057;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.meal-time {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #4ECDC4;
+}
+
+.meal-time h3 {
+    color: #495057;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.meal-menu {
+    line-height: 1.8;
+    color: #6c757d;
+}
+
+.meal-menu div {
+    padding: 5px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.meal-menu div:last-child {
+    border-bottom: none;
+}
+
+.error {
+    text-align: center;
+    padding: 40px;
+    color: #dc3545;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        border-radius: 10px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    
+    .date-selector {
+        padding: 20px;
+    }
+    
+    #mealDate {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    #searchBtn {
+        width: 100%;
+    }
+}
